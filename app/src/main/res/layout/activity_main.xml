@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="com.yorshahar.tictactoe.MainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="#ff000000"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="@integer/grid_size"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffff5c38"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gridView"
+        android:layout_alignLeft="@+id/gridView"
+        android:layout_alignStart="@+id/gridView"
+        android:maxHeight="10dp"
+        android:maxWidth="10dp"
+        android:minHeight="6dp"
+        android:minWidth="6dp" />
+
+</RelativeLayout>
